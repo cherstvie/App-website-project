@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+#nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 44px 0;
+  font-size: 16px;
+  z-index: 10;
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#nav-bar .slide-out-menu {
+  position: fixed;
+  display: block;
+  width: 380px;
+  max-width: 650px;
+  height: 100%;
+  left: -380px;
+  top: 0;
+  padding: 40px;
+  z-index: 50;
+  background-color: #26272d;
+  transition: left 0.7s ease-in-out;
+}
+#nav-bar .slide-out-menu .menu-close-btn {
+  position: absolute;
+  right: 20px;
+  top: 52px;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+#nav-bar .slide-out-menu .menu-close-btn span {
+  position: absolute;
+  height: 2px;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  transition: 0.25s ease-in-out;
+}
+#nav-bar .slide-out-menu .menu-close-btn span:nth-child(1) {
+  top: 50%;
+  transform: rotate(45deg);
+}
+#nav-bar .slide-out-menu .menu-close-btn span:nth-child(2) {
+  top: 50%;
+  transform: rotate(-45deg);
+}
+#nav-bar .slide-out-menu .slide-out-logo {
+  display: inline-block;
+  padding-top: 11px;
+}
+#nav-bar .slide-out-menu ul {
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+#nav-bar .slide-out-menu ul li {
+  display: block;
+  margin: 10px 0;
+  padding: 0;
+}
+#nav-bar .slide-out-menu ul li:last-child {
+  margin-top: 20px;
+}
+#nav-bar .slide-out-menu ul a {
+  color: white;
+}
+#nav-bar .slide-out-menu ul a:hover {
+  color: #267df4;
+}
+#nav-bar .slide-out-menu ul a.btn:hover {
+  color: white;
+}
+#nav-bar .open {
+  left: 0;
+}
+#nav-bar .slide-out-menu-footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: block;
+  padding: 20px 40px;
+}
+#nav-bar .slide-out-menu-footer p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  line-height: 1.5;
+}
+#nav-bar .slide-out-menu-footer p a {
+  text-decoration: underline;
+  color: #267df4;
+}
+#nav-bar .slide-out-menu-footer .socials {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-rows: auto;
+  justify-content: start;
+  gap: 20px;
+}
+#nav-bar .slide-out-menu-footer .socials li:last-child {
+  margin: 10px 0;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 40px;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.btn {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 9px 16px;
+  border: 1px solid rgba(38, 39, 45, 0.1);
+  border-radius: 30px;
+  cursor: pointer;
+  line-height: 1.5;
+  white-space: nowrap;
+  vertical-align: middle;
+  text-align: center;
+  margin-bottom: 0;
+  display: inline-block;
+}
+
+.btn-green {
+  background-color: #267df4;
+  color: white;
+}
+
+.nav-menu {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  top: 8px;
+  cursor: pointer;
+}
+.nav-menu span {
+  height: 2px;
+  left: 0;
+  right: 0;
+  position: absolute;
+  background-color: #000;
+  border-radius: 1px;
+  transition: 0.25s ease-in-out;
+}
+.nav-menu span:nth-child(1) {
+  top: 4px;
+}
+.nav-menu span:nth-child(2) {
+  top: 8.5px;
+}
+.nav-menu span:nth-child(3) {
+  bottom: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto;
+  gap: 30px;
+}
+
+.menu li, .contacts li {
+  padding: 9px 0;
+}
+.menu li .btn, .contacts li .btn {
+  color: white;
+}
+.menu li .btn:hover, .contacts li .btn:hover {
+  color: white;
+}
+.menu li a, .contacts li a {
+  color: #26272d;
+}
+.menu li a:hover, .contacts li a:hover {
+  color: #267df4;
+}
+
+.contacts {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  justify-items: end;
+  align-items: center;
+  gap: 30px;
+}
+
+.banner {
+  padding: 200px 0 510px;
+  background-image: url(images/banner_background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}/*# sourceMappingURL=style.css.map */
