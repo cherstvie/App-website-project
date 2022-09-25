@@ -117,10 +117,10 @@
 
 .wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: -webkit-min-content 1fr -webkit-min-content;
+  grid-template-columns: min-content 1fr min-content;
   grid-template-rows: 40px;
   align-items: center;
-  justify-content: center;
   justify-items: center;
 }
 
@@ -161,13 +161,13 @@
   transition: 0.25s ease-in-out;
 }
 .nav-menu span:nth-child(1) {
-  top: 4px;
+  top: 2px;
 }
 .nav-menu span:nth-child(2) {
-  top: 8.5px;
+  top: 7px;
 }
 .nav-menu span:nth-child(3) {
-  bottom: 0px;
+  bottom: 1px;
 }
 
 a {
