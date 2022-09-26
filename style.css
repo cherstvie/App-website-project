@@ -287,14 +287,13 @@ a {
 }
 
 .iphone-feature {
-  padding-top: 200px;
+  padding-top: 240px;
   position: relative;
 }
 .iphone-feature img {
-  scale: 0.8;
   position: absolute;
-  left: -150px;
-  top: 0;
+  right: 50%;
+  top: 50px;
 }
 .iphone-feature .device-feature h2 {
   font-family: "Varela Round", sans-serif;
@@ -323,6 +322,110 @@ a {
   background-color: transparent;
 }
 
+.map-feature {
+  margin-top: 300px;
+  margin-bottom: 150px;
+}
+.map-feature .map img {
+  width: 100%;
+}
+.map-feature .map-feature-text .map-title {
+  font-family: "Varela Round", sans-serif;
+  font-size: 42px;
+  color: rgb(38, 39, 45);
+  margin-bottom: 60px;
+}
+.map-feature .map-feature-text .map-par {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  color: rgb(140, 143, 148);
+  margin-bottom: 60px;
+}
+.map-feature .map-feature-text .partners {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: rgb(38, 39, 45);
+  margin-bottom: 25px;
+}
+.map-feature .boxes-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 1fr;
+}
+.map-feature .boxes-container img {
+  cursor: pointer;
+}
+
+.iphone-screens {
+  padding: 140px 0 800px;
+  background-color: #f4f4f5;
+  visibility: visible;
+  overflow: hidden;
+  text-align: center;
+}
+.iphone-screens .images-showcase .screens-container {
+  position: relative;
+  margin-bottom: 10px;
+}
+.iphone-screens .images-showcase .screens-container li {
+  width: 320px;
+  height: 568px;
+  position: absolute;
+  top: 92px;
+  box-shadow: 10px 10px 16px 0 rgba(61, 61, 62, 0.15);
+}
+.iphone-screens .images-showcase .screens-container li:nth-child(1) {
+  left: 50%;
+  margin-left: -880px;
+}
+.iphone-screens .images-showcase .screens-container li:nth-child(2) {
+  left: 50%;
+  margin-left: -530px;
+}
+.iphone-screens .images-showcase .screens-container li.main-img {
+  width: 395px;
+  top: 0;
+  left: 50%;
+  margin-left: -193px;
+  box-shadow: none;
+  height: 779px;
+}
+.iphone-screens .images-showcase .screens-container li:nth-child(4) {
+  right: 50%;
+  margin-right: -530px;
+}
+.iphone-screens .images-showcase .screens-container li:nth-child(5) {
+  right: 50%;
+  margin-right: -880px;
+}
+.iphone-screens .screens-title {
+  font-family: "Varela Round", sans-serif;
+  font-size: 42px;
+  color: rgb(38, 39, 45);
+  margin-bottom: 25px;
+}
+.iphone-screens .span {
+  height: 2px;
+  background-color: #267df4;
+  width: 50px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+.iphone-screens .screens-par {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: rgb(140, 143, 148);
+  margin-bottom: 25px;
+}
+
+.ready-to-buy {
+  background-color: #f4f4f5;
+  padding: 120px 0 130px;
+}
+
 .banner-wrapper {
   display: grid;
   grid-template-columns: 1fr;
@@ -343,4 +446,65 @@ a {
   grid-template-columns: 40% 40%;
   grid-template-rows: 1fr;
   justify-content: space-between;
+}
+
+.map-wrapper {
+  display: grid;
+  grid-template-columns: 35% 80%;
+  grid-template-rows: 1fr;
+  gap: 60px;
+}
+
+.sub-wrapper {
+  text-align: center;
+}
+.sub-wrapper .subtitle {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  color: rgb(58, 61, 75);
+  margin-bottom: 40px;
+}
+.sub-wrapper .sub-title {
+  font-family: "Varela Round", sans-serif;
+  font-size: 42px;
+  color: rgb(58, 61, 75);
+  margin-bottom: 40px;
+}
+.sub-wrapper .email-bar {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  border: 1px solid rgba(38, 39, 45, 0.5);
+  border-radius: 30px;
+  max-width: 100%;
+  width: 500px;
+  height: 50px;
+  position: relative;
+}
+.sub-wrapper .email-bar input {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  left: 20px;
+  height: 100%;
+  width: 300px;
+}
+.sub-wrapper .email-bar input::-moz-placeholder {
+  color: rgb(38, 39, 45);
+}
+.sub-wrapper .email-bar input:-ms-input-placeholder {
+  color: rgb(38, 39, 45);
+}
+.sub-wrapper .email-bar input::placeholder {
+  color: rgb(38, 39, 45);
+}
+.sub-wrapper .email-bar button {
+  width: 160px;
+  position: absolute;
+  right: 2px;
+  top: 2px;
+}
+.sub-wrapper .email-bar button i {
+  margin-left: 20px;
 }/*# sourceMappingURL=style.css.map */
