@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-#nav-bar {
+.nav-bar {
   position: fixed;
   top: 0;
   left: 0;
@@ -13,6 +13,14 @@
   font-size: 16px;
   z-index: 10;
   font-family: "Lato", sans-serif;
+  background-color: transparent;
+  transition: all 0.4s cubic-bezier(0, 0, 0.6, 1);
+}
+
+.active {
+  background-color: white;
+  padding: 24px 0;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
 }
 
 .container {
@@ -22,7 +30,7 @@
   padding-right: 15px;
 }
 
-#nav-bar .slide-out-menu {
+.nav-bar .slide-out-menu {
   position: fixed;
   display: block;
   width: 380px;
@@ -35,7 +43,7 @@
   background-color: #26272d;
   transition: left 0.7s ease-in-out;
 }
-#nav-bar .slide-out-menu .menu-close-btn {
+.nav-bar .slide-out-menu .menu-close-btn {
   position: absolute;
   right: 20px;
   top: 52px;
@@ -43,7 +51,7 @@
   height: 15px;
   cursor: pointer;
 }
-#nav-bar .slide-out-menu .menu-close-btn span {
+.nav-bar .slide-out-menu .menu-close-btn span {
   position: absolute;
   height: 2px;
   left: 0;
@@ -51,43 +59,43 @@
   background-color: #fff;
   transition: 0.25s ease-in-out;
 }
-#nav-bar .slide-out-menu .menu-close-btn span:nth-child(1) {
+.nav-bar .slide-out-menu .menu-close-btn span:nth-child(1) {
   top: 50%;
   transform: rotate(45deg);
 }
-#nav-bar .slide-out-menu .menu-close-btn span:nth-child(2) {
+.nav-bar .slide-out-menu .menu-close-btn span:nth-child(2) {
   top: 50%;
   transform: rotate(-45deg);
 }
-#nav-bar .slide-out-menu .slide-out-logo {
+.nav-bar .slide-out-menu .slide-out-logo {
   display: inline-block;
   padding-top: 11px;
 }
-#nav-bar .slide-out-menu ul {
+.nav-bar .slide-out-menu ul {
   margin-top: 40px;
   margin-bottom: 10px;
 }
-#nav-bar .slide-out-menu ul li {
+.nav-bar .slide-out-menu ul li {
   display: block;
   margin: 10px 0;
   padding: 0;
 }
-#nav-bar .slide-out-menu ul li:last-child {
+.nav-bar .slide-out-menu ul li:last-child {
   margin-top: 20px;
 }
-#nav-bar .slide-out-menu ul a {
+.nav-bar .slide-out-menu ul a {
   color: white;
 }
-#nav-bar .slide-out-menu ul a:hover {
+.nav-bar .slide-out-menu ul a:hover {
   color: #267df4;
 }
-#nav-bar .slide-out-menu ul a.btn:hover {
+.nav-bar .slide-out-menu ul a.btn:hover {
   color: white;
 }
-#nav-bar .open {
+.nav-bar .open {
   left: 0;
 }
-#nav-bar .slide-out-menu-footer {
+.nav-bar .slide-out-menu-footer {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -95,23 +103,23 @@
   display: block;
   padding: 20px 40px;
 }
-#nav-bar .slide-out-menu-footer p {
+.nav-bar .slide-out-menu-footer p {
   color: rgba(255, 255, 255, 0.8);
   font-size: 14px;
   line-height: 1.5;
 }
-#nav-bar .slide-out-menu-footer p a {
+.nav-bar .slide-out-menu-footer p a {
   text-decoration: underline;
   color: #267df4;
 }
-#nav-bar .slide-out-menu-footer .socials {
+.nav-bar .slide-out-menu-footer .socials {
   display: grid;
   grid-template-columns: auto auto auto auto auto auto;
   grid-template-rows: auto;
   justify-content: start;
   gap: 20px;
 }
-#nav-bar .slide-out-menu-footer .socials li:last-child {
+.nav-bar .slide-out-menu-footer .socials li:last-child {
   margin: 10px 0;
 }
 
@@ -207,11 +215,132 @@ a {
 }
 
 .banner {
-  padding: 200px 0 510px;
+  padding-top: 210px;
   background-image: url(images/banner_background.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   position: relative;
   overflow: hidden;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.banner .banner-title {
+  font-family: "Varela Round", sans-serif;
+  font-size: 62px;
+  color: rgb(38, 39, 45);
+}
+.banner .banner-par {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  color: rgb(140, 143, 148);
+  text-align: center;
+  max-width: 830px;
+  line-height: 1.5;
+}
+.banner .banner-btn {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  color: rgb(38, 39, 45);
+  padding-left: 40px;
+  padding-right: 40px;
+  max-width: 200px;
+}
+.banner .banner-btn i {
+  margin-right: 15px;
+}
+.banner .banner-phone-img {
+  height: 450px;
+  overflow: hidden;
+}
+
+.features {
+  padding-top: 50px;
+}
+.features .container {
+  padding-bottom: 50px;
+  border-bottom: 1px solid grey;
+}
+.features .lock, .features .clock {
+  padding: 30px;
+}
+.features .f-icon {
+  margin-bottom: 48px;
+}
+.features .f-icon i {
+  font-size: 42px;
+  color: #267df4;
+}
+.features .f-description {
+  font-family: "Lato", sans-serif;
+}
+.features .f-description h3 {
+  font-size: 26px;
+  margin-bottom: 30px;
+  color: rgb(38, 39, 45);
+}
+.features .f-description p {
+  font-size: 18px;
+  color: rgb(140, 143, 148);
+  line-height: 28px;
+}
+
+.iphone-feature {
+  padding-top: 200px;
+  position: relative;
+}
+.iphone-feature img {
+  scale: 0.8;
+  position: absolute;
+  left: -150px;
+  top: 0;
+}
+.iphone-feature .device-feature h2 {
+  font-family: "Varela Round", sans-serif;
+  font-size: 42px;
+  line-height: 42px;
+  color: rgb(38, 39, 45);
+  margin-bottom: 80px;
+}
+.iphone-feature .device-feature p {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  color: rgb(140, 143, 148);
+  margin-bottom: 80px;
+}
+.iphone-feature .device-feature .btn-wrapper {
+  display: grid;
+  grid-template-columns: 200px 140px;
+  grid-template-rows: 1fr;
+  gap: 20px;
+}
+.iphone-feature .device-feature .btn-wrapper i {
+  margin-left: 50px;
+}
+.iphone-feature .device-feature .btn-wrapper .btn-bg {
+  background-color: transparent;
+}
+
+.banner-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(auto);
+  justify-items: center;
+  gap: 60px;
+}
+
+.feature-wrapper {
+  display: grid;
+  grid-template-columns: 570px 570px;
+  grid-template-rows: 1fr;
+  gap: 30px;
+}
+
+.iphone-f-wrapper {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-template-rows: 1fr;
+  justify-content: space-between;
 }/*# sourceMappingURL=style.css.map */
