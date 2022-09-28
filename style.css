@@ -215,6 +215,7 @@ a {
 .banner .banner-title {
   font-family: "Varela Round", sans-serif;
   font-size: 62px;
+  text-align: center;
   color: rgb(38, 39, 45);
 }
 .banner .banner-par {
@@ -276,6 +277,9 @@ a {
   padding-top: 240px;
   position: relative;
 }
+.iphone-feature .device {
+  width: 100%;
+}
 .iphone-feature img {
   position: absolute;
   right: 50%;
@@ -311,9 +315,12 @@ a {
 .map-feature {
   margin-top: 300px;
   margin-bottom: 150px;
+  position: relative;
+  overflow: hidden;
 }
 .map-feature .map img {
-  width: 100%;
+  position: absolute;
+  left: 50%;
 }
 .map-feature .map-feature-text .map-title {
   font-family: "Varela Round", sans-serif;
@@ -414,8 +421,7 @@ a {
 
 .banner-wrapper {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(auto);
+  grid-template-columns: 100%;
   justify-items: center;
   gap: 60px;
 }
@@ -565,13 +571,12 @@ a {
   display: flex;
   align-items: center;
   text-align: center;
-  height: 550px;
 }
 .plan .plan-wrapper .plan-package .price-table {
   font-family: "Lato", sans-serif;
   width: 100%;
   height: 510px;
-  padding: 60px 0;
+  padding: 60px 10px;
   margin: 10px 0;
   border-radius: 10px;
   background-color: rgb(235, 235, 237);
@@ -692,4 +697,173 @@ a {
   font-family: "Lato", sans-serif;
   font-size: 14px;
   color: rgb(140, 143, 148);
+}
+
+.footer .container {
+  padding: 120px 0;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+.footer .footer-wrapper {
+  display: grid;
+  grid-template-columns: 25% 50%;
+  grid-template-rows: 1fr;
+  justify-content: space-between;
+}
+.footer .footer-wrapper .info-block {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+.footer .footer-wrapper .info-block .info-text {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  color: rgb(140, 143, 148);
+  line-height: 1.5;
+}
+.footer .footer-wrapper .info-block .socials {
+  display: grid;
+  grid-template-columns: repeat(6, 30px);
+  gap: 20px;
+}
+.footer .footer-wrapper .info-block .socials li {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 20px;
+}
+.footer .footer-wrapper .info-block .socials li a {
+  color: rgba(19, 19, 21, 0.3);
+}
+.footer .footer-wrapper .info-block .socials li a:hover {
+  color: #26272d;
+}
+.footer .footer-wrapper .footer-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.footer .footer-wrapper .footer-links ul {
+  font-family: "Lato", sans-serif;
+  padding: 0 15px;
+  line-height: 35px;
+}
+.footer .footer-wrapper .footer-links ul .title {
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: #26272d;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.footer .footer-wrapper .footer-links ul a {
+  font-size: 16px;
+  color: rgb(140, 143, 148);
+}
+.footer .footer-wrapper .footer-links ul a:hover {
+  color: #26272d;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 992px;
+  }
+}
+@media (max-width: 768px) {
+  .conatiner {
+    max-width: 736px;
+  }
+}
+@media (max-width: 320px) {
+  .container {
+    max-width: 320px;
+  }
+  section {
+    width: 100%;
+  }
+  header .menu li, header .contacts li {
+    display: none;
+  }
+  .banner img {
+    scale: 0.7;
+  }
+  .features .feature-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .iphone-feature {
+    padding-top: 50px;
+  }
+  .iphone-feature .iphone-f-wrapper {
+    grid-template-columns: 100%;
+  }
+  .iphone-feature .iphone-f-wrapper .device img {
+    position: static;
+    padding-bottom: 30px;
+    width: 100%;
+  }
+  .iphone-feature .iphone-f-wrapper .btn-wrapper {
+    grid-template-columns: 100%;
+  }
+  .map-feature {
+    padding-top: 50px;
+  }
+  .map-feature .map-wrapper {
+    grid-template-columns: 100%;
+  }
+  .map-feature .boxes-container {
+    grid-template-columns: 100%;
+    gap: 20px;
+  }
+  .map-feature .map img {
+    position: static;
+    width: 100%;
+  }
+  .iphone-screens {
+    padding-bottom: 550px;
+  }
+  .iphone-screens .images-showcase {
+    scale: 0.6;
+  }
+  .ready-to-buy {
+    padding: 50px 0;
+  }
+  .ready-to-buy .sub-wrapper .email-bar button {
+    position: relative;
+    margin-top: 70px;
+  }
+  .ready-to-buy .sub-wrapper .subtitle {
+    padding-top: 30px;
+    margin-bottom: 20px;
+  }
+  .plan {
+    padding: 50px 0;
+    width: 100%;
+  }
+  .plan .plan-wrapper {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, auto);
+    gap: 30px;
+  }
+  .plan .plan-wrapper .plan-package {
+    flex-direction: column;
+  }
+  .subscribe {
+    padding: 50px 0;
+  }
+  .subscribe .container .email-bar button {
+    position: relative;
+    margin-top: 70px;
+  }
+  .subscribe .container .promise {
+    padding-top: 70px;
+  }
+  .footer {
+    padding: 10px;
+  }
+  .footer .footer-wrapper {
+    grid-template-columns: 100%;
+    gap: 50px;
+  }
+  .footer .footer-wrapper .footer-links {
+    grid-template-columns: 100%;
+    gap: 80px;
+  }
 }/*# sourceMappingURL=style.css.map */
