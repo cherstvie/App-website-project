@@ -461,7 +461,7 @@ a {
   font-size: 16px;
   margin: 0 auto;
   margin-bottom: 70px;
-  border: 1px solid rgba(38, 39, 45, 0.5);
+  border: 1px solid rgba(38, 39, 45, 0.2);
   border-radius: 30px;
   max-width: 100%;
   width: 500px;
@@ -490,6 +490,7 @@ a {
   position: absolute;
   right: 2px;
   top: 2px;
+  background-color: rgb(111, 199, 84);
 }
 .sub-wrapper .email-bar button i {
   margin-left: 20px;
@@ -634,4 +635,61 @@ a {
   background-color: #267df4;
   color: white;
   bottom: 65px;
+}
+
+.subscribe {
+  padding: 90px 0 50px;
+}
+.subscribe .container {
+  text-align: center;
+}
+.subscribe .container .subs-title {
+  font-family: "Varela Round", sans-serif;
+  font-size: 42px;
+  color: rgb(38, 39, 45);
+  margin-bottom: 50px;
+}
+.subscribe .container .email-bar {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border: 1px solid rgba(38, 39, 45, 0.2);
+  border-radius: 30px;
+  max-width: 100%;
+  width: 500px;
+  height: 50px;
+  position: relative;
+}
+.subscribe .container .email-bar input {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  left: 20px;
+  height: 100%;
+  width: 300px;
+}
+.subscribe .container .email-bar input::-moz-placeholder {
+  color: rgb(38, 39, 45);
+}
+.subscribe .container .email-bar input:-ms-input-placeholder {
+  color: rgb(38, 39, 45);
+}
+.subscribe .container .email-bar input::placeholder {
+  color: rgb(38, 39, 45);
+}
+.subscribe .container .email-bar button {
+  width: 160px;
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  background-color: rgb(111, 199, 84);
+}
+.subscribe .container .email-bar button i {
+  margin-left: 20px;
+}
+.subscribe .container .promise {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  color: rgb(140, 143, 148);
 }/*# sourceMappingURL=style.css.map */
