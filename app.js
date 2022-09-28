@@ -28,3 +28,16 @@ window.addEventListener("scroll", function () {
         navBarOnScroll.classList.remove("active");
     }
 })
+
+let switchIndiv = document.querySelector(".indiv");
+let switchCom = document.querySelector(".company");
+
+switchIndiv.addEventListener("click", function () {
+    switchIndiv.classList.add("active");
+    switchCom.classList.remove("active");
+});
+
+switchCom.addEventListener("click", function () {
+    switchCom.classList.add("active");
+    switchIndiv.classList.remove("active");
+})

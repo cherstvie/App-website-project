@@ -578,3 +578,169 @@ a {
         }
     }
 }
+
+.plan {
+    padding: 160px 0 190px;
+    background-color: #f4f4f5;
+
+    .plan-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 4fr;
+        grid-template-rows: 1fr;
+        gap: 130px;
+        align-items: center;
+
+        .plan-info {
+
+            .plan-title {
+                font-family: 'Varela Round', sans-serif;
+                font-size: 42px;
+                color:rgb(38, 39, 45);
+                margin-bottom: 70px;
+            }
+
+            .subtitle {
+                font-family: 'Lato', sans-serif;
+                font-size: 12px;
+                font-weight: 700;
+                color: rgb(38, 39, 45);
+                margin-bottom: 20px;
+            }
+
+            .toggle-container {
+                margin-bottom: 70px;
+                
+                .switch-toggles {
+                    display: flex;
+                    width: 262px;
+                    height: 50px;
+                    color: #8c8f94;
+                    border: 1px solid rgba(38, 39, 45, 0.2);
+                    border-radius: 30px;
+                    font-family: 'Lato', sans-serif;
+
+                    .indiv, .company {
+                        width: 130px;
+                        padding: 13px 10px;
+                        text-align: center;
+                        cursor: pointer;
+                        font-size: 16px;
+                        margin: 3px;
+                        transition: 0.7s ease-in;
+
+
+                        &.active {
+                            border-radius: 30px;
+                            color: #26272d;
+                        }
+                    }
+                }
+            }
+
+            .plan-par {
+                font-family: 'Lato', sans-serif;
+                font-size: 20px;
+                color:rgb(140, 143, 148);
+                margin-bottom: 40px;
+                line-height: 1.5;
+            }
+
+            .info {
+                font-family: 'Lato', sans-serif;
+                font-size: 14px;
+                color: rgb(140, 143, 148);
+
+                a {
+                    text-decoration: underline;
+                    color: rgb(38, 125, 244);
+                }
+            }
+        }
+
+        .plan-package {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            height: 550px;
+
+            .price-table {
+                font-family: 'Lato', sans-serif;
+                width: 100%;
+                height: 510px;
+                padding: 60px 0;
+                margin: 10px 0;
+                border-radius: 10px;
+                background-color: rgb(235, 235, 237);
+                position: relative;
+
+                .price-title {
+                    font-size: 32px;
+                    color:rgb(38, 39, 45);
+                    margin-bottom: 30px;
+                }
+
+                .price-mark {
+                    border: 1px solid rgba(38, 39, 45, 0.2);
+                    border-radius: 30px;
+                    margin: 0 auto;
+                    margin-bottom: 40px;
+                    width: fit-content;
+
+                    .price-val {
+                        padding: 9px 15px;
+                        font-size: 11px;
+                        font-weight: 700;
+                        color: rgb(38, 39, 45);
+                    }
+                }
+
+                .price-text {
+                    font-size: 20px;
+                    color: rgb(140, 143, 148);
+                    margin-bottom: 50px;
+                }
+
+                .price-feature {
+                    font-size: 20px;
+                    color: rgb(38, 39, 45);
+                    margin-bottom: 25px;
+
+                    i {
+                        color: rgb(111, 199, 84);
+                        margin-right: 5px;
+                    }
+                }
+
+                .btn {
+                    width: 210px;
+                    position: absolute;
+                    bottom: 45px;
+                    left: calc(50% - 105px);
+                }
+
+                .btn-green {
+                    background-color: transparent;
+                    border-color: #267df4;
+                    color:rgb(38, 125, 244);
+                }
+            }
+
+            .highlighted {
+                background-color: white;
+                margin: 0;
+                height: 550px;
+                box-shadow:rgba(0, 0, 0, 0.15);
+
+                .price-title {
+                    margin-top: 20px;
+                }
+
+                .btn-green {
+                    background-color: #267df4;
+                    color: white;
+                    bottom: 65px;
+                }
+            }
+        }
+    }
+}
